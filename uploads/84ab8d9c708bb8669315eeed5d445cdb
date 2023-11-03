@@ -1,6 +1,0 @@
-	<% if (locals.fileLink !=null) { %>
-			<div style="margin-bottom: 1rem;">
-				Your file is uploaded at:
-				<a href=" <%= locals.fileLink %> "><%= locals.fileLink %></a>
-			</div>
-		<% } %>
