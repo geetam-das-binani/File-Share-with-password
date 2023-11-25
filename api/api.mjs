@@ -14,7 +14,7 @@ export const addData = async (req, res) => {
 		const datafile = await file.create(filedata);
 
 		res.render("index", {
-			fileLink: `http://localhost:8000/datafile/${datafile._id}`,
+			fileLink: `http://localhost:${process.env.PORT || 8000}/datafile/${datafile._id}`,
 		});
 	} catch (e) {
 		res.status(404).json({ message: e.message });
